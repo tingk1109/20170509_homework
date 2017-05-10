@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Exercises</title>
+  
+</head>
+<body>
+    <div id = "debug">...</div>
+   <script>	
+function getLine(count, what) {
+	var line = "";
+	for (var i = 1; i <= count; i++) {
+		line = line + what;
+	}
+	return line;
+}
+
+  var result = "";
+	for (var i = 1; i <= 5; i++) {
+		result = result + getLine(i, "*") + "<br>";
+	}
+	debug.innerHTML = result;
+
+</script> 
+</body>
+</html>
